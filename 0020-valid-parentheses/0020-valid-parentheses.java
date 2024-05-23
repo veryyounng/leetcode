@@ -1,3 +1,5 @@
+import java.util.*;
+
 class Solution {
     public boolean isValid(String s) {
         Map<Character, Character> map = Map.of(')', '(', '}', '{', ']', '[');
@@ -13,4 +15,5 @@ class Solution {
 
         return stack.isEmpty();
     }
+
 }
