@@ -1,15 +1,16 @@
 class Solution {
     public int balancedStringSplit(String s) {
-        char[] arr = s.toCharArray();
-        int strlen = s.length();
-        int matchCounter = 0; 
+        char[] array = s.toCharArray();
+        int strLen = s.length();
+        int cnt = 0; 
         int num = 0;
-        for(int i = 0; i < strlen; i++){
-            if(arr[i] == 'L'){
-                matchCounter ++;
+        for(int i = 0; i < strLen; i++){
+            if(array[i] == 'L'){
+                cnt++;
             }else{
-                matchCounter--;
-            }if(matchCounter == 0){
+                cnt--;
+            }
+            if(cnt == 0){
                 num++;
             }
         }
